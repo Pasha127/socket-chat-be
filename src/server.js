@@ -7,8 +7,8 @@ import {newConnectionHandler} from "./socket/index.js"
 
 const port = process.env.PORT || 3001
 
-expressServer = express();
-httpServer = createServer(expressServer);
+const expressServer = express();
+const httpServer = createServer(expressServer);
 const io = new SocketServer(httpServer);
 
 io.on("connection", newConnectionHandler);
