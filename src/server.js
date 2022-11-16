@@ -20,6 +20,5 @@ mongoose.connection.on("connected", ()=>
 httpServer.listen(
     port,()=>{
     console.table(listEndpoints(expressServer));
-    console.log(`Server running on posrt ${port}`)
-})
-)
+    console.log(`Server running on port ${port}`)
+}))
